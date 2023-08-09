@@ -12,9 +12,15 @@
     
 </head>
 <body>
-    <video autoplay muted loop id="myVideo">
+    <video id="myVideo" autoplay="autoplay" loop="loop">
         <source src="BackGround.mp4" type="video/mp4">
       </video>
+      <div id="overlay"></div> 
+      <div class="main-container">
+      <div class="play-button-container">
+      <button class="play-button" onclick="BeginPlay()"></button>
+      </div>
+    </div>
     <h1>Whos That Pokemon?</h1>
     <h2 id="Highscore">Highscore:0</h2>
     <br>
@@ -22,10 +28,10 @@
     <h2 id="Currentscore">Score:0</h2>
     <img src="">
     <div class="buttons-div">
-        <button id="Answer1"></button>
-        <button id="Answer2"></button>
-        <button id="Answer3"></button>
-        <button id="Answer4"></button>
+        <button class="buttons" id="Answer1"></button>
+        <button class="buttons" id="Answer2"></button>
+        <button class="buttons" id="Answer3"></button>
+        <button class="buttons" id="Answer4"></button>
     </div>
     
 </body>

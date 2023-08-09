@@ -4,10 +4,12 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
   }
   H1{
     font-family: 'Pokemon Solid', sans-serif;
-    position: absolute;
+    z-index: 1;
+    position:absolute;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -17,22 +19,63 @@
     
 }
   .buttons-div{
+    z-index: 1;
     position: fixed;
     left: 50%;
     top:80%;
     transform: translate(-50%, 0);
   }
-  button{
+  .buttons{
     padding:70px;
     margin-right: 30px;
     font-size:200%;
+    z-index: 1;
   }
   img{
     position:fixed;
     left:50%;
     top:30%;
     transform: translate(-50%, 0);
+    z-index: 1;
   }
   h2{
     position:fixed;
+    z-index:1;
+  }
+  .main-container{
+    position:relative;
+    z-index: 3;
+  }
+  .play-button{
+    font-size: 16px;
+    z-index:3;
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 37px 0px 37px 74px;
+    border-color: transparent transparent transparent #202020;
+    box-sizing: border-box;
+
+  }
+  .play-button-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  z-index:3;
+  }
+  #overlay {
+    position: fixed; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
   }

@@ -5458,7 +5458,7 @@ answers = [];
 answers.push(randomPokemon1,randomPokemon2,randomPokemon3,currentPokemon)
 answers = check(answers);
  answers = shuffle(answers);
- $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".png");
+ $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp");
       $("#Answer1").text(answers[0]);
       $("#Answer2").text(answers[1]);
       $("#Answer3").text(answers[2]);
@@ -5470,13 +5470,13 @@ answers.push(randomPokemon1,randomPokemon2,randomPokemon3,currentPokemon)
 console.log(answers)
 answers=check(answers);
 console.log(answers)
- answers=shuffle(answers);
+answers=shuffle(answers);
 
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
 
    // While there remain elements to shuffle.
-   while (currentIndex != 0) {
+    while (currentIndex != 0) {
 
     // Pick a remaining element.
     randomIndex = Math.floor(Math.random() * currentIndex);
@@ -5508,12 +5508,15 @@ function scorefunction(Answer){
 }
 
 $(document).ready(function(){
+
+      $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp").hide();
+      $("#Answer1").text(answers[0]).hide();
+      $("#Answer2").text(answers[1]).hide();
+      $("#Answer3").text(answers[2]).hide();
+      $("#Answer4").text(answers[3]).hide();
+      $("#Currentscore").hide();
+    $("#Highscore").hide();
   
-      $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".png");
-      $("#Answer1").text(answers[0]);
-      $("#Answer2").text(answers[1]);
-      $("#Answer3").text(answers[2]);
-      $("#Answer4").text(answers[3]);
     //Score System
       scorefunction("#Answer1")
       scorefunction("#Answer2")
@@ -5532,6 +5535,19 @@ function check(answers){
   yes = check(yes)
  }
  return yes;
+}
+function BeginPlay(){
+  $("#overlay").css("display","none")
+  $(".play-button").hide()
+  $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp").show();
+      $("#Answer1").text(answers[0]).show();
+      $("#Answer2").text(answers[1]).show();
+      $("#Answer3").text(answers[2]).show();
+      $("#Answer4").text(answers[3]).show();
+      $("#Currentscore").show();
+      $("#Highscore").show();
+
+
 }
 
     console.log(score)
