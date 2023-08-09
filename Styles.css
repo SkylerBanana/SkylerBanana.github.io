@@ -30,6 +30,16 @@
     margin-right: 30px;
     font-size:200%;
     z-index: 1;
+    font-size:30px;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:#ffcb05;
+    letter-spacing: 4px;
+    transition: all .5s ease;
+    border-style: solid;
+    border-color:black;
+    border-radius:10px;
+    box-sizing: border-box;
   }
   img{
     position:fixed;
@@ -49,12 +59,18 @@
   .play-button{
     font-size: 16px;
     z-index:3;
-    width: 74px;
-    height: 74px;
     border-style: solid;
-    border-width: 37px 0px 37px 74px;
-    border-color: transparent transparent transparent #202020;
+    border-color:black;
+    border-radius:10px;
     box-sizing: border-box;
+    width:150px;
+    height:70px;
+    font-size:30px;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:rgba(255, 180, 40, 0.966);
+    letter-spacing: 4px;
+    transition: all .5s ease;
 
   }
   .play-button-container{
@@ -78,4 +94,8 @@
     background-color: rgba(0,0,0,0.5); 
     z-index: 2; 
     cursor: pointer; 
+  }
+  .play-button:hover{
+    color: #090909;
+    background-color: #fff;
   }

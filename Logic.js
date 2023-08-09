@@ -5434,12 +5434,33 @@ let pokemons = [
       "Legendary": "TRUE"
     }
   ]
+  const typeColor =  {
+    "Psychic": "#ee5499",
+    "Steel": "#b8b8d0",
+    "Fire": "#ec4225",
+    "Electric": "#f5cc34",
+    "Grass": "#76ca54",
+    "Ice": "#66ccff",
+    "Fighting": "#bb5545",
+    "Poison": "#aa5599",
+    "Ground": "#ddbb55",
+    "Flying": "#8899ff",
+    "Bug": "#aabb22",
+    "Rock": "#bbaa66",
+    "Ghost": "#6667bc",
+    "Dragon": "#7038f8",
+    "Dark": "#705848",
+    "Fairy": "#fea4f7",
+    "Normal": "#ec4225",
+    "Water": "#4e9aff"
+
+  }
 var score = 0;
 var highscore = 0;
 var answers = [];
 function getRandomPokemon() {
   const randomPokemon = Math.floor(Math.random() * pokemons.length);
-  return pokemons[randomPokemon].Name;
+  return [pokemons[randomPokemon].Name,pokemons[randomPokemon]["Type 1"]]
 }
 
 var randomPokemon1 = getRandomPokemon();
@@ -5457,21 +5478,21 @@ currentPokemon = getRandomPokemon();
 answers = [];
 answers.push(randomPokemon1,randomPokemon2,randomPokemon3,currentPokemon)
 answers = check(answers);
- answers = shuffle(answers);
- $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp");
-      $("#Answer1").text(answers[0]);
-      $("#Answer2").text(answers[1]);
-      $("#Answer3").text(answers[2]);
-      $("#Answer4").text(answers[3]);
+answers = shuffle(answers);
+ $("img").attr("src", "Pokemon_imgs/" + currentPokemon[0] + ".webp");
+      $("#Answer1").text(answers[0][0]);
+      $("#Answer2").text(answers[1][0]);
+      $("#Answer3").text(answers[2][0]);
+      $("#Answer4").text(answers[3][0]);
   
 
 }
 answers.push(randomPokemon1,randomPokemon2,randomPokemon3,currentPokemon)
-console.log(answers)
-answers=check(answers);
-console.log(answers)
-answers=shuffle(answers);
 
+answers=check(answers);
+
+answers=shuffle(answers);
+console.log(typeColor[answers[0][1]])
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
 
@@ -5492,7 +5513,7 @@ function shuffle(array) {
 //score function
 function scorefunction(Answer){
   $(Answer).click(function(){
-    if($(this).text() != currentPokemon){
+    if($(this).text() != currentPokemon[0]){
       score=0;
     }
     else{
@@ -5509,13 +5530,13 @@ function scorefunction(Answer){
 
 $(document).ready(function(){
 
-      $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp").hide();
-      $("#Answer1").text(answers[0]).hide();
-      $("#Answer2").text(answers[1]).hide();
-      $("#Answer3").text(answers[2]).hide();
-      $("#Answer4").text(answers[3]).hide();
+      $("img").attr("src", "Pokemon_imgs/" + currentPokemon[0] + ".webp").hide();
+      $("#Answer1").text(answers[0][0]).css("background-color",typeColor[answers[0][1]]).hide();
+      $("#Answer2").text(answers[1][0]).css("background-color",typeColor[answers[1][1]]).hide();
+      $("#Answer3").text(answers[2][0]).css("background-color",typeColor[answers[2][1]]).hide();
+      $("#Answer4").text(answers[3][0]).css("background-color",typeColor[answers[3][1]]).hide();
       $("#Currentscore").hide();
-    $("#Highscore").hide();
+      $("#Highscore").hide();
   
     //Score System
       scorefunction("#Answer1")
@@ -5531,7 +5552,7 @@ function check(answers){
  )
  if(yes.length < 4){
   yes.push(getRandomPokemon())
-  console.log(yes)
+  
   yes = check(yes)
  }
  return yes;
@@ -5539,15 +5560,15 @@ function check(answers){
 function BeginPlay(){
   $("#overlay").css("display","none")
   $(".play-button").hide()
-  $("img").attr("src", "Pokemon_imgs/" + currentPokemon + ".webp").show();
-      $("#Answer1").text(answers[0]).show();
-      $("#Answer2").text(answers[1]).show();
-      $("#Answer3").text(answers[2]).show();
-      $("#Answer4").text(answers[3]).show();
+  $("img").attr("src", "Pokemon_imgs/" + currentPokemon[0] + ".webp").show();
+      $("#Answer1").text(answers[0][0]).css("background-color",typeColor[answers[0][1]]).show();
+      $("#Answer2").text(answers[1][0]).css("background-color",typeColor[answers[1][1]]).show();
+      $("#Answer3").text(answers[2][0]).css("background-color",typeColor[answers[2][1]]).show();
+      $("#Answer4").text(answers[3][0]).css("background-color",typeColor[answers[3][1]]).show();
       $("#Currentscore").show();
       $("#Highscore").show();
 
 
 }
 
-    console.log(score)
+    
