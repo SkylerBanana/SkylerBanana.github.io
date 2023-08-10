@@ -140,7 +140,7 @@
     }
     .pokemans{
       height:auto;
-      width:300px;
+      width:250px;
     }
     .buttons{
       width:125px;
@@ -149,35 +149,10 @@
       gap:20px;
     }
     .buttons-div{
-      top:60%;
+      top:70%;
     }
     h2{
-      font-size:25px;
-    }
-    
-  }
-  @media(max-width:360px){
-    .Whodat{
-      width:250px;
-        
-    }
-    .pokemans{
-      height:auto;
-      width:300px;
-    }
-    .buttons{
-      width:100px;
-      height:60px;
-      font-size:30%;
-      gap:2x;
-      margin-left:5px;
-      margin-right:0px;
-    }
-    .buttons-div{
-      top:60%;
-    }
-    h2{
-      font-size:25px;
+      font-size:20px;
     }
     
   }
