@@ -14,8 +14,7 @@
     top:80%;
     transform: translate(-50%, 0);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction:row;
     
   }
   .buttons{
@@ -42,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom:10px;
     
   }
   .pokemans{
@@ -150,7 +150,7 @@
     }
     
   }
-  @media(min-width:360px){
+  @media(max-width:360px){
     .Whodat{
       width:250px;
         
@@ -160,14 +160,15 @@
       width:300px;
     }
     .buttons{
-      width:80px;
+      width:100px;
       height:60px;
-      font-size:50%;
+      font-size:30%;
       gap:2x;
       margin-left:5px;
-      margin-right:5px;
+      margin-right:0px;
     }
     h2{
-      font-size:30px;
+      font-size:50px;
     }
+    
   }
