@@ -145,7 +145,25 @@
     .buttons{
       width:125px;
       height:60px;
-      font-size:75%;
+      font-size:80%;
     }
-
+    
+  }
+  @media(max-width:480px){
+    .Whodat{
+      width:250px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:300px;
+    }
+    .buttons{
+      width:80px;
+      height:60px;
+      font-size:80%;
+    }
+    h2{
+      font-size:20px;
+    }
   }
