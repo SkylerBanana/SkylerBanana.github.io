@@ -160,10 +160,12 @@
       width:300px;
     }
     .buttons{
-      width:70px;
+      width:75px;
       height:60px;
       font-size:75%;
-      gap:15px;
+      gap:5x;
+      margin-left:10px;
+      margin-right:10px;
     }
     h2{
       font-size:10px;
