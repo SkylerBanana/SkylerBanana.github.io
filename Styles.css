@@ -6,31 +6,24 @@
     min-height: 100%;
     z-index: -1;
   }
-  H1{
-    font-family: 'Pokemon Solid', sans-serif;
-    z-index: 1;
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    font-size: 700%;
-    color:#ffcb05;
-    -webkit-text-stroke: 2px #2a75bb;
-    
-}
+  
   .buttons-div{
     z-index: 1;
     position: fixed;
     left: 50%;
     top:80%;
     transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
   .buttons{
-    padding:70px;
-    margin-right: 30px;
+    padding:0px;
+    margin-right:20px;
     font-size:200%;
     z-index: 1;
-    font-size:30px;
+    font-size:20px;
     color:white;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color:#ffcb05;
@@ -40,8 +33,18 @@
     border-color:black;
     border-radius:10px;
     box-sizing: border-box;
+    -webkit-text-stroke: 1px rgb(20, 20, 20);
+    width:200px;
+    height:100px;
+    overflow:auto;
+    text-align: center;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
-  img{
+  .pokemans{
     position:fixed;
     left:50%;
     top:30%;
@@ -51,6 +54,10 @@
   h2{
     position:fixed;
     z-index:1;
+    font-family:impact;
+    color:white;
+    -webkit-text-stroke: 1px rgb(20, 20, 20);
+
   }
   .main-container{
     position:relative;
@@ -98,4 +105,47 @@
   .play-button:hover{
     color: #090909;
     background-color: #fff;
+  }
+  .whodat-container{
+    display: flex;
+    justify-content: center;
+    z-index:3;
+  }
+  .Whodat{
+    z-index:3;
+    width:550px;
+    height:auto;
+  }
+
+  @media(max-width:1080px){
+    .Whodat{
+      width:350px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:400px;
+    }
+    .buttons{
+      width:150px;
+      height:75px;
+      font-size:100%;
+    }
+
+  }
+  @media(max-width:720px){
+    .Whodat{
+      width:250px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:300px;
+    }
+    .buttons{
+      width:125px;
+      height:60px;
+      font-size:75%;
+    }
+
   }
