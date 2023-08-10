@@ -127,7 +127,7 @@
       width:400px;
     }
     .buttons{
-      width:150px;
+      width:160px;
       height:75px;
       font-size:100%;
     }
@@ -143,13 +143,13 @@
       width:250px;
     }
     .buttons{
-      width:125px;
+      width:150px;
       height:60px;
-      font-size:80%;
+      font-size:90%;
       gap:20px;
     }
     .buttons-div{
-      top:70%;
+      top:90%;
     }
     h2{
       font-size:20px;
