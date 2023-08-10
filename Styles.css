@@ -148,6 +148,12 @@
       font-size:80%;
       gap:20px;
     }
+    .buttons-div{
+      top:60%;
+    }
+    h2{
+      font-size:25px;
+    }
     
   }
   @media(max-width:360px){
