@@ -289,26 +289,26 @@ and (min-width: 200px)
 and (max-width: 720px)   
   {
     .Whodat{
-      width:1px;
+      width:175px;
         
     }
     .pokemans{
       height:auto;
-      width:125px;
+      width:150px;
     }
     .buttons{
-      width:100px;
-      height:40px;
+      width:120px;
+      height:50px;
       font-size:100%;
       gap:20px;
-      -webkit-text-stroke: .75px rgb(20, 20, 20);
+      -webkit-text-stroke: .25px rgb(20, 20, 20);
       letter-spacing:2px;
     }
     .buttons-div{
-      top:65%;
+      top:85%;
     }
     h2{
-      font-size:35px;
-      -webkit-text-stroke: 1px rgb(20, 20, 20);
+      font-size:15px;
+      -webkit-text-stroke: .75px rgb(20, 20, 20);
     }
 }
