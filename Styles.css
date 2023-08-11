@@ -135,17 +135,17 @@
   }
   @media screen and (max-width:720px){
     .Whodat{
-      width:175px;
+      width:195px;
         
     }
     .pokemans{
       height:auto;
-      width:150px;
+      width:170px;
     }
     .buttons{
-      width:95px;
-      height:40px;
-      font-size:60%;
+      width:115px;
+      height:50px;
+      font-size:70%;
       gap:20px;
       -webkit-text-stroke: .5px rgb(20, 20, 20);
       letter-spacing:2px;
