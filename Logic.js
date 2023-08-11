@@ -5391,7 +5391,7 @@ let pokemons = [
   },
   {
     "#": "386",
-    "Name": "DeoxysNormal Forme",
+    "Name": "Deoxys",
     "Type 1": "Psychic",
     "Type 2": "",
     "HP": "50",

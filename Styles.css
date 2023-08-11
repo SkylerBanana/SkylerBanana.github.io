@@ -133,26 +133,29 @@
     }
 
   }
-  @media(max-width:720px){
+  @media screen and (max-width:720px){
     .Whodat{
-      width:250px;
+      width:175px;
         
     }
     .pokemans{
       height:auto;
-      width:250px;
+      width:150px;
     }
     .buttons{
-      width:150px;
-      height:60px;
-      font-size:90%;
+      width:95px;
+      height:40px;
+      font-size:60%;
       gap:20px;
+      -webkit-text-stroke: .5px rgb(20, 20, 20);
+      letter-spacing:2px;
     }
     .buttons-div{
-      top:90%;
+      top:72%;
     }
     h2{
       font-size:20px;
+      -webkit-text-stroke: .5px rgb(20, 20, 20);
     }
     
   }
