@@ -284,3 +284,32 @@
 
 
 }
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+    .Whodat{
+      width:150px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:125px;
+    }
+    .buttons{
+      width:100px;
+      height:40px;
+      font-size:100%;
+      gap:20px;
+      -webkit-text-stroke: .75px rgb(20, 20, 20);
+      letter-spacing:2px;
+    }
+    .buttons-div{
+      top:65%;
+    }
+    h2{
+      font-size:35px;
+      -webkit-text-stroke: 1px rgb(20, 20, 20);
+    }
+}
