@@ -287,7 +287,7 @@
 @media screen and (max-width: 720px) {
   
     .Whodat{
-      width:0%;
+      width:60%;
         
     }
     .pokemans{
@@ -295,10 +295,10 @@
       width:50%;
     }
     .buttons{
-      width:100%;
+      width:150px;
       height:60px;
-      font-size:14px;
-      gap:20px;
+      font-size:18px;
+      gap:100px;
       -webkit-text-stroke: .25px rgb(20, 20, 20);
       letter-spacing:2px;
     }
@@ -307,7 +307,7 @@
     }
     h2{
       font-size:20px;
-      -webkit-text-stroke: .75px rgb(20, 20, 20);
+      -webkit-text-stroke: .5px rgb(20, 20, 20);
     }
     #score-div1{
       margin-bottom:0px;
