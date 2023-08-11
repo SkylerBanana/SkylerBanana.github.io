@@ -216,7 +216,7 @@
   and (max-device-width: 2000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .Whodat{
-      width:400px;
+      width:300px;
         
     }
     .pokemans{
@@ -284,31 +284,29 @@
 
 
 }
-@media screen 
-and (min-width: 200px)
-and (max-width: 720px)   
-  {
+@media screen and (max-width: 720px) {
+  
     .Whodat{
-      width:250px;
+      width:100%;
         
     }
     .pokemans{
       height:auto;
-      width:150px;
+      width:100%;
     }
     .buttons{
-      width:175px;
+      width:45%;
       height:60px;
-      font-size:125%;
+      font-size:14px;
       gap:20px;
       -webkit-text-stroke: .25px rgb(20, 20, 20);
       letter-spacing:2px;
     }
     .buttons-div{
-      top:95%;
+      top:90%;
     }
     h2{
-      font-size:25px;
+      font-size:18px;
       -webkit-text-stroke: .75px rgb(20, 20, 20);
     }
     #score-div1{
