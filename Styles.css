@@ -289,15 +289,15 @@ and (min-width: 200px)
 and (max-width: 720px)   
   {
     .Whodat{
-      width:350px;
+      width:300px;
         
     }
     .pokemans{
       height:auto;
-      width:325px;
+      width:275px;
     }
     .buttons{
-      width:220px;
+      width:175px;
       height:60px;
       font-size:125%;
       gap:20px;
@@ -308,10 +308,10 @@ and (max-width: 720px)
       top:85%;
     }
     h2{
-      font-size:10px;
+      font-size:15px;
       -webkit-text-stroke: .75px rgb(20, 20, 20);
     }
     #score-div1{
-      margin-bottom:15px;
+      margin-bottom:5px;
      }
 }
