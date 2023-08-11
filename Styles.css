@@ -143,9 +143,9 @@
       width:170px;
     }
     .buttons{
-      width:305px;
+      width:215px;
       height:60px;
-      font-size:85%;
+      font-size:95%;
       gap:20px;
       -webkit-text-stroke: .25px rgb(20, 20, 20);
       letter-spacing:2px;
