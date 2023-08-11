@@ -285,10 +285,9 @@
 
 }
 @media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
+  and (device-width: 414px) 
+  and (device-height: 732px)  
+  {
     .Whodat{
       width:150px;
         
