@@ -284,9 +284,7 @@
 
 
 }
-@media screen 
-  and (device-width: 414px) 
-  and (device-height: 732px)  
+@media screen and (max-width: 720px)   
   {
     .Whodat{
       width:1px;
