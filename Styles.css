@@ -57,6 +57,8 @@
     font-family:impact;
     color:white;
     -webkit-text-stroke: 1px rgb(20, 20, 20);
+    padding:0;
+    margin:0;
 
   }
   .main-container{
@@ -116,26 +118,20 @@
     width:550px;
     height:auto;
   }
-
-  @media(max-width:1080px){
-    .Whodat{
-      width:350px;
-        
-    }
-    .pokemans{
-      height:auto;
-      width:400px;
-    }
-    .buttons{
-      width:160px;
-      height:75px;
-      font-size:100%;
-    }
+  #score-div1{
+    padding-bottom:30px;
 
   }
-  @media screen and (max-width:720px){
+
+  
+
+ 
+  @media screen 
+  and (min-device-width: 1000px)
+  and (max-device-width:1300px)
+  and (-webkit-min-device-pixel-ratio: 1){
     .Whodat{
-      width:195px;
+      width:5px;
         
     }
     .pokemans{
@@ -145,7 +141,7 @@
     .buttons{
       width:150px;
       height:60px;
-      font-size:95%;
+      font-size:100%;
       gap:20px;
       -webkit-text-stroke: .25px rgb(20, 20, 20);
       letter-spacing:2px;
@@ -159,3 +155,132 @@
     }
     
   }
+  @media screen and (max-width:1280px){
+    .Whodat{
+      width:250px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:225px;
+    }
+    .buttons{
+      width:180px;
+      height:60px;
+      font-size:120%;
+      gap:20px;
+      -webkit-text-stroke: .75px rgb(20, 20, 20);
+      letter-spacing:2px;
+    }
+    .buttons-div{
+      top:65%;
+    }
+    h2{
+      font-size:35px;
+      -webkit-text-stroke: 1px rgb(20, 20, 20);
+    }
+    
+  }
+  @media screen and (max-width:2560px){
+    .Whodat{
+      width:650px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:600px;
+    }
+    .buttons{
+      width:480px;
+      height:100px;
+      font-size:200%;
+      gap:20px;
+      -webkit-text-stroke: 1.25px rgb(20, 20, 20);
+      letter-spacing:2.5px;
+    }
+    .buttons-div{
+      top:75%;
+    }
+    h2{
+      font-size:75px;
+      -webkit-text-stroke: 2px rgb(20, 20, 20);
+      padding-bottom:300px; 
+    }
+    #score-div1{
+     margin-bottom:80px;
+    }
+    
+  }
+  @media screen 
+  and (min-device-width: 1700px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .Whodat{
+      width:400px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:350px;
+    }
+    .buttons{
+      width:300px;
+      height:80px;
+      font-size:180%;
+      gap:20px;
+      -webkit-text-stroke: 1.25px rgb(20, 20, 20);
+      letter-spacing:2.5px;
+    }
+    .buttons-div{
+      top:80;
+    }
+    h2{
+      font-size:55px;
+      -webkit-text-stroke: 2px rgb(20, 20, 20);
+      padding-bottom:300px; 
+    }
+    #score-div1{
+     margin-bottom:80px;
+    }
+ 
+    
+}
+
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+    .Whodat{
+      width:275px;
+        
+    }
+    .pokemans{
+      height:auto;
+      width:250px;
+    }
+    .buttons{
+      width:200px;
+      height:70px;
+      font-size:160%;
+      gap:20px;
+      -webkit-text-stroke: 1.25px rgb(20, 20, 20);
+      letter-spacing:2.5px;
+    }
+    .buttons-div{
+      top:90;
+    }
+    h2{
+      font-size:35px;
+      -webkit-text-stroke: 1.5px rgb(20, 20, 20);
+      padding-bottom:0px; 
+    }
+    #score-div1{
+     margin-bottom:30px;
+    }
+
+
+
+}
